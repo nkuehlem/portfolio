@@ -16,7 +16,8 @@ text color
 /*************************************
 gray color
 *************************************/
-
+    --color-gray-lighter1: #E1E1E1;
+    --color-gray: #3e3e40;
 /*************************************
 fonts
 *************************************/
@@ -53,12 +54,17 @@ body {
 Main layout
 *************************************/
 body {
-    background-color: var(--color-black);
+    background-color: var(--color-gray);
 }
 
 main {
     line-height: 1.5;
+    margin: auto;
     max-width: 45rem;
+}
+.box {
+    color: var(--color-secondary);
+    background-color: var(--color-white);
 }
 /*************************************
 links

@@ -5,46 +5,38 @@ html{
 /*************************************
 colors
 *************************************/
-    --color-primary: #6fffe9;
-    --color-secondary: #5bc0be;
+    --color-primary: #64C6C5;
+    --color-secondary: #548584;
+    --color-splash: #daa520;
+    --color-blue-dark:#30384c;
     --color-black: #050609;
     --color-white: #f9f9f9;
-/*************************************
-text color
-*************************************/
 
 /*************************************
 gray color
 *************************************/
-    --color-gray-lighter1: #E1E1E1;
-    --color-gray: #3e3e40;
+    --color-gray-1: #D8D8D9;
+    --color-gray-1: #B1B2B3;
+    --color-gray-2: #8B8B8C;
+    --color-gray-3: #646566;
+    --color-gray-4: #3e3e40;
+    --color-gray-5: #323234;
+    --color-gray-6: #252527;
+    
 /*************************************
 fonts
 *************************************/
---font-lato: 'Lato' , sans-serif;
+
 --font-ubuntu: 'Ubuntu' , sans-serif;
---font-abel:'Abel', sans-serif;
 
 }
 
 /*************************************
 Typography
 *************************************/
-body {
-    font-family: var(--font-lato);
+body { 
     color: var(--color-primary);
-}
-
-.lato {
-    font-family: var(--font-lato);
-}
-
-.ubuntu {
     font-family: var(--font-ubuntu);
-}
-
-.abel {
-    font-family: var(--font-abel);
 }
 
 .color-secondary {
@@ -54,7 +46,7 @@ body {
 Main layout
 *************************************/
 body {
-    background-color: var(--color-gray);
+    background-color: var(--color-blue-dark);
 }
 
 main {
@@ -62,22 +54,93 @@ main {
     margin: auto;
     max-width: 45rem;
 }
-.box {
-    color: var(--color-secondary);
-    background-color: var(--color-white);
-}
+
+
+
 /*************************************
 links
 *************************************/
+a, a:visited {
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: none;
+    color: var(--color-gray-2);
+}
+
+a:active {
+	color: var(--color-secondary);
+}
 
 /*************************************
 navigation
 *************************************/
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+}
+nav a, nav a:visited {
+    color: var(--color-primary);
+    padding: 2px 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+nav a:focus {
+	color: var(--color-gray-2);
+}
+
+nav a:active {
+	color: var(--color-splash);
+}
+
+nav .active {
+    background-color: var(--color-white);
+    color: var(--color-gray-4);
+}
+
+nav .active:hover {
+    color: var(--color-gray-6);
+}
+
+@media screen and ( min-width: 600px ) {
+    nav li {
+        display: inline-block;
+    }
+    
+}
+
+@media screen and ( min-width: 900px ) {
+    nav li {
+        font-size: 3rem;
+    }
+    
+}
+
+
 
 /*************************************
-hero banner
+hero banner & Logo
 *************************************/
-
+.logo {
+    font-size: 2rem;
+}
+@media screen and (min-width:318px) {
+    .logo {
+    font-size: 3rem;
+    }
+}
 /*************************************
 Buttons
 *************************************/

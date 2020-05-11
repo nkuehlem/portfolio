@@ -278,6 +278,10 @@ grid
 .grid img{
     max-width: 15rem;
 }
+
+.grid img:hover {
+    transform: scale(1.5);
+}
 /*************************************
 footer
 *************************************/
